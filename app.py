@@ -1,5 +1,5 @@
 # ==========================================================
-# M.TECH MULTI-DISEASE DIAGNOSTIC SYSTEM - STREAMLIT APP
+# B.TECH MULTI-DISEASE DIAGNOSTIC SYSTEM - STREAMLIT APP
 # ==========================================================
 
 import streamlit as st
@@ -112,7 +112,7 @@ if st.sidebar.button("Logout"):
 # MAIN APP
 # ----------------------------------------------------------
 
-st.title("🩺 Multi-Disease Diagnostic System (B.Tech Project)")
+st.title("🩺 Multi-Disease Diagnostic System")
 st.markdown("---")
 
 

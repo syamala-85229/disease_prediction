@@ -105,7 +105,7 @@ st.sidebar.success(f"Logged in as: {st.session_state['user']}")
 if st.sidebar.button("Logout"):
     st.session_state["authenticated"] = False
     st.session_state["user"] = ""
-    st.experimental_rerun()
+    st.rerun()
 
 
 # ----------------------------------------------------------

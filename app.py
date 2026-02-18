@@ -47,49 +47,32 @@ def medical_login():
         .stApp {
             background: linear-gradient(to right, #e6f2ff, #f9fcff);
         }
-
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
         .login-card {
             background-color: white;
-            padding: 40px 35px;
+            padding: 40px;
             border-radius: 15px;
-            box-shadow: 0px 4px 25px rgba(0,0,0,0.15);
-            width: 420px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+            width: 400px;
+            margin: auto;
+            margin-top: 100px;
         }
-
         .title {
             text-align: center;
             font-size: 26px;
             font-weight: bold;
             color: #0b6fa4;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
-
-        div[data-testid="stTextInput"] {
-            margin-bottom: 15px;
-        }
-
-        div[data-testid="stButton"] {
-            text-align: center;
-        }
-
         </style>
     """, unsafe_allow_html=True)
 
-    st.markdown('<div class="main-container"><div class="login-card">', unsafe_allow_html=True)
-
+    st.markdown('<div class="login-card">', unsafe_allow_html=True)
     st.markdown('<div class="title">🩺 AI Medical Diagnostic System</div>', unsafe_allow_html=True)
 
     username = st.text_input("User ID")
     password = st.text_input("Password", type="password")
 
-    if st.button("🔐 Secure Login", use_container_width=True):
+    if st.button("🔐 Secure Login"):
 
         user_found = False
 
@@ -103,7 +86,8 @@ def medical_login():
         if not user_found:
             st.error("Invalid Credentials")
 
-    st.markdown('</div></div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
 
 # ----------------------------------------------------------
 # SESSION HANDLING
